@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans-serif);
+    font-size: 14px;
+    background-color: var(--noir----fond);
+    color: var(--blanc---texte);
+}
+
+h1 {
+    font-family: var(--font-display);
+    font-size: 40px;
+    
+}
+
+h2 {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-style: weight 700;
+}
+
+h3 {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-style: normal, weight 400;
+}
+
+h4 {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-style:italic;
+  font-style: weight 700;
+}
+
+h5 {
+  font-family: var(--font-sans-serif);
+  font-size: 16px;
+}
+
+article {
+  background-color: var(--rose---couleur-dicone-2) ;
+  color: var(--noir----fond);
+}
+
+a {
+  color: var(--rose---couleur-dicone-2) ;
+  font-family: var(--font-sans-serif);
+  font-size: 14px;
+  font-style: italic;
+  font-style: weight 600;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 40px;
+  
+}

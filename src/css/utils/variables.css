@@ -1,0 +1,24 @@
+:root {
+/* Color styles */
+--violet--foncé: rgba(154, 52, 255, 1);
+--violet---texte: rgba(208, 161, 255, 1);
+--noir----fond: rgba(0, 0, 0, 1);
+--blanc---texte: rgba(255, 255, 255, 1);
+--rose---couleur-dicone-2: rgba(227, 166, 236, 1);
+--jaune---fond-pour-icone: rgba(255, 255, 102, 1);
+
+/* Text-size styles */
+--titre-3: 15px;
+--titre-1: 24px;
+--titre-2: 18px;
+--texte: 14px;
+
+/* Font-family style */
+--font-display: 'Monoton', serif;
+--font-serif: 'PT Serif', serif;
+--font-sans-serif: 'Raleway', sans-serif;
+
+/* Effect styles */
+--drapeau: inset 161px 70px 4px rgba(0, 0, 0, 0.75);
+
+}
