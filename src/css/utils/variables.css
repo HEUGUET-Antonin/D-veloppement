@@ -1,11 +1,11 @@
 :root {
 /* Color styles */
 --violet--foncé: rgba(154, 52, 255, 1);
---violet---texte: rgba(208, 161, 255, 1);
---noir----fond: rgba(0, 0, 0, 1);
---blanc---texte: rgba(255, 255, 255, 1);
---rose---couleur-dicone-2: rgba(227, 166, 236, 1);
---jaune---fond-pour-icone: rgba(255, 255, 102, 1);
+--texte2: rgba(208, 161, 255, 1);
+--fond: rgba(0, 0, 0, 1);
+--texte: rgba(255, 255, 255, 1);
+--couleur-dicone2: rgba(227, 166, 236, 1);
+--couleur-dicone1: rgba(255, 255, 102, 1);
 
 /* Text-size styles */
 --titre-3: 15px;
