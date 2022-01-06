@@ -7,3 +7,7 @@
 @import url('base/main.css');
 
 @import url('base/media.css');
+
+@import url('layout/header.css');
+
+@import url('components/menu.css');

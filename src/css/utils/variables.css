@@ -3,7 +3,7 @@
 --violet--foncé: rgba(154, 52, 255, 1);
 --texte2: rgba(208, 161, 255, 1);
 --fond: rgba(0, 0, 0, 1);
---texte: rgba(255, 255, 255, 1);
+--blanc: white;
 --couleur-dicone2: rgba(227, 166, 236, 1);
 --couleur-dicone1: rgba(255, 255, 102, 1);
 
@@ -21,4 +21,7 @@
 /* Effect styles */
 --drapeau: inset 161px 70px 4px rgba(0, 0, 0, 0.75);
 
+--letter-spacing: 0.05em;
+
+--text-xl: 1.375rem;
 }

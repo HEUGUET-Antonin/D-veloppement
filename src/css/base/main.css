@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
+main {
     font-family: var(--font-sans-serif);
     font-size: 14px;
-    background-color: var(--noir----fond);
     color: var(--blanc---texte);
+    background-color: var(--fond);
 }
 
 h1 {
@@ -42,20 +42,37 @@ h5 {
 }
 
 article {
-  background-color: var(--rose---couleur-dicone-2) ;
-  color: var(--noir----fond);
+  background-color: var(--couleur-dicone2) ;
+  color: var(--fond);
 }
 
 a {
-  color: var(--rose---couleur-dicone-2) ;
-  font-family: var(--font-sans-serif);
-  font-size: 14px;
-  font-style: italic;
-  font-style: weight 600;
+text-decoration: none;
+color: var(--texte);
 }
 
-h1 {
-  font-family: var(--font-display);
-  font-size: 40px;
-  
+video {
+  width:80%;
 }
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  } 
+

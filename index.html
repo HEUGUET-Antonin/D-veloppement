@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +7,47 @@
     <title>Femusic Page d'accueil</title>
 
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
-        <h1><a href="index.html">Femusic</a></h1>
-        <img src="assets/img/icon/Icone_Menu_Latéral.svg" alt="Icone menu hamburger">
+
+    <header class="headerpage">
+
+        <div class="header__start">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="conservatoire.html">Le conservatoire</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Enseignements</a></li>
+                    <li class="menu__item"><a class="menu__link" href="agenda.html">Agenda</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                    <li class="menu__item menu__item--btn"><a class="menu__link" href="inscription.html">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h3>La musique :  porte-parole du féminisme </h3>
-        <p> Femusic est un site dédié à la cause féministe dans le monde de la musique.</p>
-        <p>Découvrez des articles complets, actuels et passionnants mêlant   
+    <main>
+        <div class="header___rectangle"></div>
+    <div class="intro">
+        <h3 class="intro__title">La musique :  porte-parole du féminisme </h3>
+        <p class="intro__text"> Femusic est un site dédié à la cause féministe dans le monde de la musique.</p>
+        <p class="intro__text">Découvrez des articles complets, actuels et passionnants mêlant   
         musique et féminisme. </p>
-        <img src="assets/img/Img/Image_de_fond.webp" alt="Image de fond">
-        <img src="assets/img/Img/Icone_note_musique.webp" alt="Note de musique">
-        <img src="assets/img/boutons_actions/Icone_Chevrons_vers_bas.svg" alt="Icone vers le bas">
-        <img src="assets/img/boutons_actions/Icone_remonter_haut_page.svg" alt="Icone remonter vers le haut">
-        
-    </section>
+        <img class="intro__fond" src="assets/img/Img/Image_de_fond.webp" alt="Image de fond">
+    </div>
 
 <article>
         <h2> Angèle, la voix du féminisme </h2>
@@ -59,7 +81,7 @@
     <figcaption>ANGELE-Démons feat. Damso</figcaption>
     </figure>
 </article>
-
+</main>
 <footer>
     <h5>Qui sommes nous :</h5>
         <p>Antonin HEUGUET MMI B1
