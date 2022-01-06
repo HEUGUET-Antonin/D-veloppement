@@ -9,8 +9,9 @@
   left: 0;
   width: 100%;
   z-index: 2;
-  border-bottom: solid 7px var(--texte2);
-  border-radius: 7px;
+  border-bottom: solid 10px var(--bleu--icon);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   padding-top: 30px;
   height: 100px;
 

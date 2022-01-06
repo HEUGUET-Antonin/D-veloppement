@@ -21,19 +21,24 @@
   
 
   .menu__list {
-    margin-top: 25vh;
-    margin-left: 15vw;
+    margin-top: 8vh;
   }
   
   .menu__item {
-    margin-top: 15%;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   
   .menu__link {
     color: var(--blanc);
     text-decoration: none;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1rem;
+    
   }
-  
 
   .menu-btn {
     position: relative;
@@ -75,4 +80,16 @@
     transform: rotate(90deg);
     top: 0;
   }
+
+  .menu__underlist {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+  }
   
+.menu__list img {
+  width: 70px;
+  height: 70px;
+}

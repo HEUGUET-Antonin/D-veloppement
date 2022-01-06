@@ -14,7 +14,7 @@
 
     <header class="headerpage">
 
-        <div class="header__start">
+        <div class="header__start" id="#hautdepage">
             <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
         </div>
 
@@ -29,11 +29,44 @@
             </button>
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="conservatoire.html">Le conservatoire</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Enseignements</a></li>
-                    <li class="menu__item"><a class="menu__link" href="agenda.html">Agenda</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-                    <li class="menu__item menu__item--btn"><a class="menu__link" href="inscription.html">S'inscrire</a></li>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__img">  
+                        De 1848 à aujourd’hui : la musique féministe
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais.png" alt="Icone anglais">
+                    </a></li>
+                    </ul>
                 </ul>
             </nav>
         </div>
@@ -43,8 +76,10 @@
     <div class="hero">
         <h3 class="hero__title">La musique :  porte-parole du féminisme </h3>
         <p class="hero__text"> Femusic est un site dédié à la cause féministe dans le monde de la musique.</p>
-        <p class="hero__text">Découvrez des articles complets, actuels et passionnants mêlant   
+        <p class="hero__text2">Découvrez des articles complets, actuels et passionnants mêlant   
         musique et féminisme. </p>
+        <a href="#début__page" class="hero__img"><img src="assets/img/boutons_actions/Icone_Chevrons_vers_bas.svg" alt="Icone chevrons vers le bas"></a>
+        <a href="#hautdepage" class="hero__icon"><img src="assets/img/boutons_actions/Icone_remonter_haut_page.svg" alt="Icone remonter haut de page" class="hero__icon__img"> </a>
     </div>
 
 <article>
@@ -57,7 +92,7 @@
 </article>
 
 <article>
-    <h2> “Brol”, un album engagé  </h2>
+    <h2 id="#début__page"> “Brol”, un album engagé  </h2>
     <img src="assets/img/Img/Image_2eme_tweet.webp" alt="Image 2ème Tweet">
     <p>  Découvrez comment le premier album d’Angèle « Brol » sortie en 2018 est une œuvre contemporaine et engagée.</p>
     <button onclick="window.location.href = 'Brol.html'">Lire</button>

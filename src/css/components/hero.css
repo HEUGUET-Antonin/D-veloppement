@@ -27,7 +27,7 @@
     z-index: 1;
 }
 
-.hero__text {
+.hero__text, .hero__text2 {
     font-size: 1rem;
     font-family: var(--font-sans-serif);
     color: var(--blanc);
@@ -35,4 +35,17 @@
     padding-left: 4rem;
     padding-right: 4rem;
     line-height: 1.3rem;
+}
+
+.hero__text2 {
+    margin-bottom: 4rem;
+}
+
+.hero__icon {
+    margin-top: 90px;
+    margin-right: 340px;
+}
+.hero__icon__img {
+    display: flex;
+    position: fixed;
 }
