@@ -132,6 +132,8 @@ button {
     color: var(--bleu--icon);
     text-align: center;
     margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
 .button__lire {

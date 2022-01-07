@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,72 @@
     <title>Femusic Article Brol</title>
 
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
-        <h1><a href="index.html">Femusic</a></h1>
-        <img src="assets/img/icon/Icone_Menu_Latéral.svg" alt="Icone menu hamburger">
+    <header class="headerpage">
+
+        <div class="header__start" id="#hautdepage">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__img">  
+                        De 1848 à aujourd’hui: la musique féministe
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone Anglais 2">
+                    </a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<h2>« Brol », un album engagé </h2>
+<h1>« Brol », un album engagé </h1>
 
-<p>"Brol" est le premier album de l'artiste Angèle. Le titre de celui-ci est un mot flamand 
+<p class="pages__intro">"Brol" est le premier album de l'artiste Angèle. Le titre de celui-ci est un mot flamand 
     qui signifie "désordre". Ce mot, choisi par l'artiste lui évoque son enfance et son pays, 
     la Belgique. Celui-ci est sorti le 5 octobre 2018 et est certifié double disque de diamant 
     avec plus d'1 000 000 de ventes à ce jour. L'album reçoit durant les victoires de la musique de 2019, 
@@ -26,19 +81,19 @@
 </p>
 
 <figure>
-<img src="assets/img/Img/XDOXZJ2HCAQ7SHFK3BHGPPXEJI1.webp" alt="Angèle tenant le vinyle Brol">
-<figcaption>Angèle tenant le vinyle de son album “Brol” </figcaption>
+<img src="assets/img/Img/XDOXZJ2HCAQ7SHFK3BHGPPXEJI1.webp" alt="Angèle tenant le vinyle Brol" class="pages__img">
+<figcaption class="pages__legende">Angèle tenant le vinyle de son album “Brol” </figcaption>
 </figure>
 
-<h3>Un album féministe</h3>
+<h2>Un album féministe</h2>
 
 <p>Angèle, dans son album sors le single féministe "Balance Ton Quoi" qui est le 
     2ème titre du projet. Le clip sort sur YouTube le 15 avril 2019 et connaît un succès immense. 
     En effet, le vidéo-clip comptabilise bientôt la centaine de millions de vues sur la plateforme. 
 </p>
 
-<p>Le titre du morceau est une référence directe au mouvement féministe <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire">
-    "Balance Ton Porc"</a>, ainsi que le mouvement <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire">"Me too"</a>. 
+<p>Le titre du morceau est une référence directe au mouvement féministe <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire" class="pages__mots">
+    "Balance Ton Porc"</a>, ainsi que le mouvement <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire" class="pages__mots">"Me too"</a>. 
     Angèle dénonce le sexisme dans cette chanson et "Balance Ton Quoi" 
     devient rapidement un hymne féministe chanté lors de manifestations féministes.
 </p>
@@ -58,11 +113,11 @@
 </p>
 
 <figure>
-<img src="assets/img/Img/-1841251.webp" alt="Scène du clip Balance Ton Quoi - Pierre Niney et Antoine Gouy">
-<figcaption>Scène du clip Balance Ton Quoi avec Pierre Niney et Antoine Gouy</figcaption>
+<img src="assets/img/Img/-1841251.webp" alt="Scène du clip Balance Ton Quoi - Pierre Niney et Antoine Gouy" class="pages__img">
+<figcaption class="pages__legende">Scène du clip Balance Ton Quoi avec Pierre Niney et Antoine Gouy</figcaption>
 </figure>
 
-<h4>Les réseaux sociaux</h4>
+<h3>Les réseaux sociaux</h3>
 
 <p>Dans le 7ème morceau « Victime des réseaux » de l'album, Angèle dénonce l'hypocrisie et 
     la jalousie des gens sur les réseaux sociaux. Le morceau dénonce aussi cette toxicité des réseaux. 
@@ -84,14 +139,14 @@
 </p>
 
 <figure>
-<img src="assets/img/Img/angèle-parti-communiste-français1.webp" alt="Extrait clip Jalousie">
-<figcaption>Extrait du clip Jalousie</figcaption>
+<img src="assets/img/Img/angèle-parti-communiste-français1.webp" alt="Extrait clip Jalousie" class="pages__img">
+<figcaption class="pages__legende">Extrait du clip Jalousie</figcaption>
 </figure>
 
-<h4>Argent et popularité</h4>
+<h3>Argent et popularité</h3>
 
 <p>« La thune » est le 1er morceau de l'album d'Angèle. Celui-ci dénonce l'avidité d'argent et de 
-    <a href="Glossaire.html#fame" title="Glossaire">"fame"</a>. 
+    <a href="Glossaire.html#fame" title="Glossaire" class="pages__mots">"fame"</a>. 
     La chanteuse décrit le monde comme envieux de richesse et de popularité. Elle ajoute que cette envie 
     et la seule motivation des gens pour bouger dans la vie active. Une motivation égoïste et néfaste.
 </p>
@@ -100,24 +155,24 @@
     puisque les gens se motive à se bouger uniquement dans le but d'être populaire. 
 </p>
 
-<h4>Soutien à la cause LGBT</h4>
+<h3>Soutien à la cause LGBT</h3>
 
 <p>Dans la 10ème piste de "Brol", le morceau "Ta Reine", Angèle aborde l'homosexualité 
     féminine et livre un message global positif sur l'homosexualité.</p>
 
 <figure>
-    <img src="assets/img/Img/angèle-live-colors1.webp" alt="Angèle sur colors">
-    <figcaption>Extrait de l’interprétation live du morceau Angèle sur la chaîne YouTube “COLORS”</figcaption>
+    <img src="assets/img/Img/angele-live-colors1.webp" alt="Angèle sur colors" class="pages__img">
+    <figcaption class="pages__legende">Extrait de l’interprétation live du morceau Angèle sur la chaîne YouTube “COLORS”</figcaption>
 </figure>
 
 <p>Elle exprime les difficultés qu'une homosexuelle peut avoir à faire son 
-    <a href="Glossaire.html#ComingOut" title="Glossaire">"coming out"</a>. En effet,
+    <a href="Glossaire.html#ComingOut" title="Glossaire" class="pages__mots">"coming out"</a>. En effet,
  encore beaucoup de monde ont du mal à accepter que deux personnes du même sexe puissent s'aimer. 
  Dans sa chanson elle utilise l'image d'un couple royal traditionnellement constitué d'un roi et 
  d'une reine pour la briser et ainsi évoquer un couple de deux reines, deux femmes.
 </p>
 
-<h5>D'où le refrain :</h5>
+<h4>D'où le refrain :</h4>
 
 <p>"Mais tu voudrais qu'elle soit ta reine ce soir ; Même si deux reines,
      c'est pas trop accepté ; Mais tu voudrais qu'elle soit ta reine ce soir ;
@@ -127,35 +182,48 @@
 <p>Pour finir, " Brol" se voit comme une œuvre moderne et actuelle, qui parle à tous et à toutes.
 </p>
 
-<button onclick="window.location.href = 'Histoire_Feminisme.html'">Lire</button>
+<button onclick="window.location.href = 'Histoire_Feminisme.html'" class="button__lire">Lire</button>
 
 <footer>
-    <h5>Qui sommes nous :</h5>
-        <p>Antonin HEUGUET MMI B1
-        <a href="mailto:antonin.heuguet@gmail.com">antonin.heuguet@gmail.com</a>
-        </p>
-    <h5>Nos réseaux :</h5>
-      <ul>
-        <li><a href="https://twitter.com/home?lang=fr" title="Twitter">
-            <img alt="Icone Twitter" src="/assets/img/icon/Logo_Twitter.svg"/>
+    <div class="footer__start"> 
+        <h5 class="footer__title">Qui sommes nous :</h5>
+        <h5 class="footer__title">Nos réseaux :</h5>
+    </div>
+    <div class="footer__main">
+
+        <div class="footer__contact">
+            <p class="footer__text">Antonin HEUGUET MMI B1</p>
+            <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                <p class="footer__link">antonin.heuguet@gmail.com</p>
             </a>
-        </li>
-        <li><a href="https://www.instagram.com/" title="Instagram">
-            <img alt="Icone Instagram" src="/assets/img/icon/Logo_Instagram.svg"/>
+        </div>
+
+        <div class="footer__social">
+
+            <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
             </a>
-        </li>
-        <li><a href="https://www.facebook.com/" title="Facebook">
-            <img alt="Icone Facebook" src="/assets/img/icon/Logo_Facebook.svg"/>
+            
+            <a href="https://www.instagram.com/" title="Instagram">
+                    <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
             </a>
-        </li>
-        <li><a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
-            <img alt="Icone Linkeldin" src="/assets/img/icon/Icone_Linkeldin.svg"/>
+
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
             </a>
-        </li>
-      </ul>
-    <p> Projet réalisé dans le cadre d’un exercice pédagogique au département 
-        <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>
-    </p>
+  
+            <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                </a>
+        </div>
+    </div>
+
+    <div class="footer__end">
+          <p class="footer__textend"> 
+              Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+          </p>
+      </div>
+
 </footer>
 
 </body>
