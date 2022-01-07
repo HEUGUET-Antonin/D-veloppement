@@ -23,6 +23,7 @@
     font-size: 36px;
     text-transform: uppercase;
     color: var(--fond);
+    font-weight: 400;
   }
 
 .header__start {

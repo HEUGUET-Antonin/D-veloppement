@@ -1,0 +1,8 @@
+.rectangle {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 22.188rem;
+    height: 1.25rem;
+    background-color: var(--bleu--icon);
+    border-radius: 60px;
+}

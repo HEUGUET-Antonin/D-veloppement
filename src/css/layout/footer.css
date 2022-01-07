@@ -1,7 +1,10 @@
-.footer {
-    border-bottom: solid 10px var(--bleu--icon);
+footer {
+    border-top: solid 10px var(--bleu--icon);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--blanc);
 }
 
 .footer__start {
@@ -22,7 +25,7 @@
 }
 
 .footer__social {
-    margin-left: 5px;
+    margin-left: 20px;
     margin-right: 10px;
 }
 
@@ -34,6 +37,8 @@
     font-family: var(--font-sans-serif);
     font-weight: 600;
     font-size: 14px;
+    padding-left: 15px;
+    padding-right: 0%;
 }
 
 .footer__link {
@@ -45,8 +50,7 @@
 }
 
 .footer__contact {
-    line-height: 4px;
-    margin-left: 5%;
+    margin-left: 0%;
 }
 
 .footer__end {
@@ -54,6 +58,11 @@
 }
 
 .footer__textend {
+    font-family: var(--font-sans-serif);
     text-align: center;
     font-size: 14px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
 }

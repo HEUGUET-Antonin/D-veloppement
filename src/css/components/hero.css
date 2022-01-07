@@ -20,7 +20,8 @@
     text-align: center;
     padding-left: 6rem;
     padding-right: 6rem;
-    line-height: 1.7rem
+    line-height: 1.7rem;
+    text-transform: none;
 }
 
 .hero__title, .hero__text {

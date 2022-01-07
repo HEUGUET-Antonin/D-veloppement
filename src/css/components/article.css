@@ -11,16 +11,16 @@
 }
 
 .article__text {
-    margin-left: 5% ;
-    margin-right: 5%;
+    padding-left: 3% ;
+    padding-right: 3%;
     font-family: var(--font-sans-serif);
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
 }
 
 .article__text2 {
-    margin-left: 2% ;
-    margin-right: 2%;
+    padding-left: 2% ;
+    padding-right: 2%;
     font-family: var(--font-sans-serif);
     font-weight: 600;
     font-size: 0.8rem;
@@ -47,6 +47,7 @@
     background-color: var(--bleu---texte);
     border-radius: 50% 20% / 10% 40%;
     margin: 5%;
+    margin-top: 10%;
     box-shadow: 10px 5px var(--bleu--fonce);
 }
 
@@ -67,7 +68,8 @@
     justify-content: center;
     border-radius: 5px;
     border: solid 3px var(--blanc);
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .article__imgtext {
@@ -85,6 +87,11 @@
     justify-content: center;
     font-weight: 400;
     font-style: italic;
+    padding-bottom: 7%;
     margin-bottom: 10%;
 
+}
+
+.menu__lang {
+    transform-style: var(--drapeau);
 }

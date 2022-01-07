@@ -25,6 +25,7 @@
   }
   
   .menu__item {
+    display: flex;
     flex-direction: column;
     margin-top: 10%;
     margin-left: 10%;
