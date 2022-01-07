@@ -46,12 +46,18 @@ p {
   padding-left: 8%;
   padding-right: 8%;
   color: var(--blanc);
+  line-height: 20px;
 }
 
 h3 {
   font-family: var(--font-serif);
-  font-size: 18px;
-  font-style: normal, weight 400;
+  font-size: 15px;
+  font-style:italic;
+  font-style: weight 700;
+  color: var(--blanc);
+  padding-left: 8%;
+  margin-top: 10%;
+  text-shadow: var(--bleu--icon) 8px 5px 1px;
 }
 
 h4 {
@@ -101,4 +107,10 @@ button {
     cursor: pointer;
   } 
 
+  .pages__img {
+    width: 230px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+  }
 
