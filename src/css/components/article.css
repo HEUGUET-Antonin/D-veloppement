@@ -53,6 +53,7 @@
 
 .article__button {
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: 900;
     font-size: 0.75rem;
     background-color: var(--violet--icon2);

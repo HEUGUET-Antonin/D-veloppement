@@ -25,11 +25,9 @@
   }
   
   .menu__item {
-    display: flex;
-    flex-direction: column;
     margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 10% ;
+    margin-right: 10%
   }
   
   .menu__link {
@@ -85,12 +83,14 @@
   .menu__underlist {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
     text-align: center;
     text-transform: uppercase;
   }
   
 .menu__list img {
+  display: block;
   width: 70px;
   height: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
