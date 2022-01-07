@@ -112,7 +112,6 @@ button {
   .pages__img {
     width: 230px;
     margin-left: 20%;
-    margin-right: 20%;
     margin-top: 5%;
   }
 
@@ -138,8 +137,7 @@ button {
 
 .button__lire {
     margin-top: 5%;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 35%;
     color: var(--fond);
     background-color: var(--violet--icon2);
     font-size: 12px;
@@ -152,3 +150,25 @@ button {
     border: 2px solid var(--blanc);
 }
 
+.button__apropos {
+  margin-top: 5%;
+  margin-left: 35%;
+  color: var(--fond);
+  background-color: var(--violet--icon2);
+  font-size: 12px;
+  font-family: var(--font-sans-serif);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 110px;
+  height: 30px;
+  border: 2px solid var(--blanc);
+}
+
+.pages__conclusion {
+  margin-top: 10%;
+}
+
+.pages__fin {
+  margin-top: 15%;
+}
