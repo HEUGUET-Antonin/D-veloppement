@@ -41,7 +41,7 @@
     text-transform: uppercase;
     width: 105px;
     height: 46px;
-    border: 1px solid var(--noir--texte);
+    border: 2px solid var(--blanc);
 
 }
 

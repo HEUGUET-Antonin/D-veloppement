@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +7,86 @@
     <title>Femusic Article Angèle</title>
 
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
-        <h1><a href="index.html">Femusic</a></h1>
-        <img src="assets/img/icon/Icone_Menu_Latéral.svg" alt="Icone menu hamburger">
+    <header class="headerpage">
+
+        <div class="header__start" id="#hautdepage">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__img">  
+                        De 1848 à aujourd’hui: la musique féministe
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone Anglais 2">
+                    </a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<h2>Angèle, la voix du féminisme</h2>
+<h1>Angèle, la voix du féminisme</h1>
 
-<p>Angèle Van Laeken plus connue sous son nom d'artiste "Angèle" est une jeune
+<p class="pages__intro">Angèle Van Laeken plus connue sous son nom d'artiste "Angèle" est une jeune
 chanteuse Belge, née le 3 décembre 1995. Angèle est aujourd'hui une figure du 
-<a href="Glossaire.html#féminisme" title="Glossaire">féminisme</a> à part entière et ce dans toute l'Europe.     
+<a href="Glossaire.html#féminisme" title="Glossaire" class="pages__mots">féminisme</a> à part entière et ce dans toute l'Europe.     
 </p>
 <figure>
-<img src="assets/img/Img/5e175a5323b1291.webp" alt="Photo d'Angèle">
-<figcaption>Angèle Van Laeken</figcaption>
+<img src="assets/img/Img/5e175a5323b1291.webp" alt="Photo d'Angèle" class="pages__img">
+<figcaption class="pages__legende">Angèle Van Laeken</figcaption>
 </figure>
-<h3>Qui est Angèle ?</h3>
-<h4>Sa jeunesse</h4>
+<h2>Qui est Angèle ?</h2>
+<h3>Sa jeunesse</h3>
 
 <p>Angèle est née à Uccle en Belgique d'un père chanteur et d'une mère comédienne : 
-    <a href="Galerie.html#parents" title="Galerie">Serge Van Laeken </a> dit "Marka" et 
-    <a href="Galerie.html#parents" title="Galerie">Laurence Bibot</a>. Elle est  aussi la sœur du rappeur 
-    <a href="Galerie.html#frère" title="Galerie">Roméo Elvis</a>. La jeune fille grandit dans la commune 
+    <a href="Galerie.html#parents" title="Galerie" class="pages__mots">Serge Van Laeken </a> dit "Marka" et 
+    <a href="Galerie.html#parents" title="Galerie" class="pages__mots">Laurence Bibot</a>. Elle est  aussi la sœur du rappeur 
+    <a href="Galerie.html#frère" title="Galerie" class="pages__mots">Roméo Elvis</a>. La jeune fille grandit dans la commune 
     flamande de Linkebeek. Elle se lance rapidement dans le monde de la musique encouragé par ses parents et commence à jouer du piano.
 </p>
 
@@ -43,7 +98,7 @@ chanteuse Belge, née le 3 décembre 1995. Angèle est aujourd'hui une figure du
 en intégrant le groupe de musique de son père et donne ses premiers concerts dans des cafés Bruxellois. 
 </p>
 
-<h4>Sa carrière</h4>
+<h3>Sa carrière</h3>
 
 <p>Durant l'année 2016, elle commence à se faire connaître grâce à ses reprises sur Instagram, ainsi que sa 
     reprise du morceau "Bruxelles" de Dick Annegarn. 
@@ -68,11 +123,11 @@ en intégrant le groupe de musique de son père et donne ses premiers concerts d
     pour le 10 Décembre de cette année.
 </p>
 <figure>
-<img src="assets/img/Img/Angele-son-album-Nonante-cinq-sort-le-10-decembre-prochain1.webp" alt="Cover Album Nonante-cinq">
-<figcaption>Cover du prohain album d’Angèle : “95”</figcaption>
+<img src="assets/img/Img/Angele-son-album-Nonante-cinq-sort-le-10-decembre-prochain1.webp" alt="Cover Album Nonante-cinq" class="pages__img">
+<figcaption class="pages__legende">Cover du prohain album d’Angèle : “95”</figcaption>
 </figure>
 
-<h3>Angèle, artiste et féministe </h3>
+<h2>Angèle, artiste et féministe </h2>
 
 <p>Angèle depuis ses débuts est clairement engagée contre le sexisme et souhaite prouver que les femmes 
     ont leurs places dans le monde la musique. 
@@ -86,16 +141,16 @@ en intégrant le groupe de musique de son père et donne ses premiers concerts d
 
 <p>Le 14 avril 2019 la jeune femme dévoile le clip de "Balance ton quoi" son single féministe présent sur son album. 
     Le morceau est considéré comme un hymne féministe et est jouée lors des marches ou des manifestations féministes. 
-    Dans ce titre Angèle mets en avant les mouvements féministes <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire">
-    "Balance ton porc"</a> et <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire">"Me too"</a>.
+    Dans ce titre Angèle mets en avant les mouvements féministes <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire" class="pages__mots">
+    "Balance ton porc"</a> et <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire" class="pages__mots">"Me too"</a>.
 </p>
 
 <figure>
-<img src="assets/img/Img/maxresdefault(1)1.webp" alt="Extrait clip Balance Ton Quoi">
-<figcaption>Extrait du clip de “Balance Ton Quoi”</figcaption>
+<img src="assets/img/Img/maxresdefault(1)1.webp" alt="Extrait clip Balance Ton Quoi" class="pages__img">
+<figcaption class="pages__legende">Extrait du clip de “Balance Ton Quoi”</figcaption>
 </figure>
 
-<h3>Féministe, mais pas seulement !</h3>
+<h2>Féministe, mais pas seulement !</h2>
 
 <p>Angèle s'engage dans de nombreuses causes autres du féminisme. 
     En effet, l'artiste lutte contre le cancer, défend la cause LGBT et la cause écologique.
@@ -109,8 +164,8 @@ en intégrant le groupe de musique de son père et donne ses premiers concerts d
 </p>
 
 <figure>
-<img src="assets/img/Img/B9721071987Z.1_20190929154132_000+G0EEIRJS11.webp" alt="Angèle durant la course KickCancer">
-<figcaption>Angèle participant à la course KickCancer</figcaption>
+<img src="assets/img/Img/B9721071987Z.1_20190929154132_000+G0EEIRJS11.webp" alt="Angèle durant la course KickCancer" class="pages__img">
+<figcaption class="pages__legende">Angèle participant à la course KickCancer</figcaption>
 </figure>
 
 <p>Pour finir, Angèle mets à l'honneur la cause LGBT dans son morceau "Ta reine" ainsi que la 
@@ -122,35 +177,48 @@ en intégrant le groupe de musique de son père et donne ses premiers concerts d
     "Brol" n'hésitez pas à lire notre article sur le sujet.
 </p>
 
-<button onclick="window.location.href = 'Brol.html'">Lire</button>
+<button onclick="window.location.href = 'Brol.html'" class="button__lire">Lire</button>
 
 <footer>
-    <h5>Qui sommes nous :</h5>
-        <p>Antonin HEUGUET MMI B1
-        <a href="mailto:antonin.heuguet@gmail.com">antonin.heuguet@gmail.com</a>
-        </p>
-    <h5>Nos réseaux :</h5>
-      <ul>
-        <li><a href="https://twitter.com/home?lang=fr" title="Twitter">
-            <img alt="Icone Twitter" src="/assets/img/icon/Logo_Twitter.svg"/>
+    <div class="footer__start"> 
+        <h5 class="footer__title">Qui sommes nous :</h5>
+        <h5 class="footer__title">Nos réseaux :</h5>
+    </div>
+    <div class="footer__main">
+
+        <div class="footer__contact">
+            <p class="footer__text">Antonin HEUGUET MMI B1</p>
+            <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                <p class="footer__link">antonin.heuguet@gmail.com</p>
             </a>
-        </li>
-        <li><a href="https://www.instagram.com/" title="Instagram">
-            <img alt="Icone Instagram" src="/assets/img/icon/Logo_Instagram.svg"/>
+        </div>
+
+        <div class="footer__social">
+
+            <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
             </a>
-        </li>
-        <li><a href="https://www.facebook.com/" title="Facebook">
-            <img alt="Icone Facebook" src="/assets/img/icon/Logo_Facebook.svg"/>
+            
+            <a href="https://www.instagram.com/" title="Instagram">
+                    <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
             </a>
-        </li>
-        <li><a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
-            <img alt="Icone Linkeldin" src="/assets/img/icon/Icone_Linkeldin.svg"/>
+
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
             </a>
-        </li>
-      </ul>
-    <p> Projet réalisé dans le cadre d’un exercice pédagogique au département 
-        <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>
-    </p>
+  
+            <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                </a>
+        </div>
+    </div>
+
+    <div class="footer__end">
+          <p class="footer__textend"> 
+              Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+          </p>
+      </div>
+
 </footer>
 
 </body>

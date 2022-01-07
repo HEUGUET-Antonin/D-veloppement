@@ -30,6 +30,7 @@ h1 {
     padding-bottom: 5%;
     padding-top: 110px;
     color: var(--blanc);
+    line-height: 30px;
 }
 
 h2 {
@@ -40,6 +41,7 @@ h2 {
   padding-top: 1%;
   padding-left: 5%;
   color: var(--blanc);
+  margin-top: 10%;
 }
 
 p {
@@ -113,4 +115,38 @@ button {
     margin-right: 20%;
     margin-top: 5%;
   }
+
+  .pages__mots {
+    color: var(--bleu--icon);
+    text-decoration: underline;
+  }
+
+  .pages__intro {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .pages__legende {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--bleu--icon);
+    text-align: center;
+    margin-top: 2%;
+  }
+
+.button__lire {
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    color: var(--fond);
+    background-color: var(--violet--icon2);
+    font-size: 12px;
+    font-family: var(--font-sans-serif);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 70px;
+    height: 30px;
+    border: 2px solid var(--blanc);
+}
 
