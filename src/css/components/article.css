@@ -47,6 +47,7 @@
     background-color: var(--bleu---texte);
     border-radius: 50% 20% / 10% 40%;
     margin: 5%;
+    box-shadow: 10px 5px var(--bleu--fonce);
 }
 
 .article__button {
@@ -85,6 +86,5 @@
     font-weight: 400;
     font-style: italic;
     margin-bottom: 10%;
-    padding-bottom: 5%;
 
 }
