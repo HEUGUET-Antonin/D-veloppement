@@ -28,6 +28,7 @@ h1 {
     text-transform: uppercase;    
     text-align: center;
     padding-bottom: 5%;
+    padding-top: 110px;
     color: var(--blanc);
 }
 
@@ -36,6 +37,7 @@ h2 {
   font-size: 1.125rem;
   font-weight: 400;
   padding-bottom: 1%;
+  padding-top: 1%;
   padding-left: 5%;
   color: var(--blanc);
 }

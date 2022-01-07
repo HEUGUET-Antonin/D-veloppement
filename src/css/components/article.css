@@ -8,6 +8,7 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 3%;
+    color: var(--fond);
 }
 
 .article__text {
@@ -16,6 +17,7 @@
     font-family: var(--font-sans-serif);
     font-weight: 600;
     font-size: 0.8rem;
+    color: var(--fond);
 }
 
 .article__text2 {
@@ -25,6 +27,7 @@
     font-weight: 600;
     font-size: 0.8rem;
     margin-top: 0px;
+    color: var(--fond);
 }
 
 .article__img {
@@ -90,6 +93,7 @@
     font-style: italic;
     padding-bottom: 7%;
     margin-bottom: 10%;
+    color: var(--fond);
 
 }
 

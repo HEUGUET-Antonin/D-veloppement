@@ -1,0 +1,30 @@
+
+
+.images155 {
+    width: 7600px;
+    height: 6000px;
+    left: 0; 
+}
+
+.image155 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 149px;
+}
+
+
+.carrousel5 {
+    width: 375px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrousel__legende {
+    background-color: var(--blanc);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--fond);
+}

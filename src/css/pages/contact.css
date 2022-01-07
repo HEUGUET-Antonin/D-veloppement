@@ -8,24 +8,23 @@
     border: 1px solid var(--blanc);
     background-color: var(--fond);
     color: var(--blanc);
-}
+}   
 
-.contact__namecase, .contact__lastnamecase {
-    width: 180;
-    height: 40px;
+.contact__namecase, .contact__lastnamecase{
+    width: 180px;
+    height: 28px;
 }
 
 .contact__mailcase {
-    width: 250px;
-    height: 40px;
+    width: 240px;
+    height: 28px;
+}
+.contact__messagecase {
+
+    width: 240px;
+    height: 100px;  
 }
 
-.contact__messagecase {
-    display: flex;
-    justify-content: flex-start;
-    width: 300px;
-    height: 180px;  
-}
 
 .contact__button {
     margin-left: 135px;
@@ -49,4 +48,20 @@
 .contact__p__button {
     display: flex;
     align-content: center;
+}
+
+.contact__form__text {
+    font-size: 12px;
+    margin-right: 60%;
+    margin-top: 10%;
+}
+
+input {
+     color: var(--blanc);
+}
+
+.contact__form__obligatoire {
+    font-size: 10px;
+    margin-left: 25px;
+    font-style: italic;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,74 @@
     <title>Femusic À propos </title>
     
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
+
 </head>
 
 <body>
-    <header>
+  <header class="headerpage">
+
+    <div class="header__start" id="#hautdepage">
         <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
-        <h1><a href="index.html">Femusic</a></h1>
-        <img src="assets/img/icon/Icone_Menu_Latéral.svg" alt="Icone menu hamburger">
-    </header>
+    </div>
+
+    <div class="header__main">
+        <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+    </div>
+
+    <div class="header__end">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+        @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                        <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle">
+                        Angèle, la voix du féminisme
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Brol.html">
+                        <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                        “Brol”, un album engagé
+                    </a></li>
+                </ul>
+                <ul class="menu__underlist list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                    <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__img">  
+                    De 1848 à aujourd’hui: la musique féministe
+                </a></li>
+                <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                    <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire">  
+                    Glossaire 
+                </a></li>
+                </ul>
+                <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="À propos.html">
+                        <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                        À propos
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                        <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                        Galerie
+                    </a></li>
+                </ul>
+                <ul class="menu__underlist list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="index.html">
+                    <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                </a></li>
+                <li class="menu__item"><a class="menu__link" href="EN index.html">
+                    <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone Anglais 2">
+                </a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <h1>À propos </h1>
-    <a href="#hautdepage" class="hero__icon"><img src="assets/img/boutons_actions/Icone_remonter_haut_page.svg" alt="Icone remonter haut de page" class="hero__icon__img"> </a>
-    <section>
         <div class="rectangle"></div>
         <h2>Qui suis-je ?</h2>
         <p>Je suis Antonin Heuguet actuellement  étudiant en première année de MMI (Métier du multimédia et de l'internet) 
@@ -32,23 +88,33 @@
         <h2>Me contacter</h2>
         <p>N'hésitez pas à me poser des questions ou à me transmettre des commentaires via mon adresse mail 
             en remplissant le formulaire ci-dessous ! 
-        <form action="#" method="post" class="contact_form">
-        <label for="firstname" class="contact__textname">Nom :
-            <input type="text" id="firstname" name="first-name" value="" class="contact__namecase">
-          </label>
+        <form action="#" method="post" class="contact__form">
 
-          <label for="lastname" class="contact__textlastname">Prénom :
-            <input type="text" id="lastname" name="last-name" value="" class="contact__lastnamecase">
+          <p class="contact__form__text">
+        <label for="firstname" class="contact__textname">Nom : *
+            <input type="text" id="firstname" name="first-name" value="" required class="contact__namecase">
           </label>
+        </p>
 
-          <label for="email" class="contact__textmail"> Adresse mail :
-            <input type="email" id="email" name="email" value=""  class="contact__mailcase">
+        <p class="contact__form__text">
+          <label for="lastname" class="contact__textlastname">Prénom : *
+            <input type="text" id="lastname" name="last-name" value="" required class="contact__lastnamecase">
           </label>
+        </p>
 
-            <label for="message" class="contact__textmessage">Message :<br>
-              <input type="text" id="message" name="message" value="" class="contact__messagecase">
+        <p class="contact__form__text">
+          <label for="email" class="contact__textmail"> Adresse mail : *
+            <input type="email" id="email" name="email" value="" required class="contact__mailcase">
+          </label>
+        </p>
+
+        <p class="contact__form__text">
+            <label for="message" class="contact__textmessage">Message :   *<br>
+              <textarea type="text" id="message" name="message" placeholder="Tapez ici votre message" value="" class="contact__messagecase">
+              </textarea>
             </label>
-
+        </p>
+        <p class="contact__form__obligatoire">*   obligatoire</p>
             <button type="submit" class="contact__button">Envoyer</button>
           
     </form>
@@ -62,45 +128,78 @@
        <p>Si vous avez aimé mon projet, je vous invite donc à consulter les autres sites présentés ci-dessous conçus par
             mes camarades de classes, travaillant sur la même problématique et tous très différents et originaux : 
         </p> 
-        <ul>
-            <li><a href="">“ICON”</a> - HOAREAU Matthieu</li>
-            <li><a href="">“Gender Education”</a> - HIENNE Allan</li>
-            <li><a href="">“F for Feminism”</a> - HEINIS Quentin</li>
-            <li><a href="">“Equality”</a> - GOLFIER Maxime</li>
-            <li><a href="">“Femin’Art”</a> - JOURY Titouan</li>
-            <li><a href="">“Japaminism”</a> - IVERSENC Alicia</li>
-            <li><a href="">“Equalshare”</a> - GROS Eliot</li>
-        </ul>
+    <div class="droite155">&nbsp;</div>
+    <div class="carrousel5">
+        <div class="images155">
+
+            <figure  class="image155">
+                <img id="img1" src="assets/img/Logo_autres_projets/ICONWHITELOGO.png">
+                <figcaption class="carrousel__legende">Site de </figcaption>
+            </figure>
+        
+            <figure class="image155">
+                <img id="img2"  src="assets/img/Logo_autres_projets/Equalshare.svg">
+                <figcaption class="carrousel__legende">Site de</figcaption>
+            </figure>
+        
+            <figure class="image155">
+                <img id="img3"   src="assets/img/Logo_autres_projets/Logoclair.png">
+                <figcaption class="carrousel__legende">Site de</figcaption>
+            </figure>
+        
+            <figure class="image155">
+                <img id="img4"  src="assets/img/Logo_autres_projets/Logo.png">
+                <figcaption class="carrousel__legende">Site de</figcaption>
+            </figure>
+
+            </div>
+        </div>
+    </div>
+    <script>carrousel5();</script>
+
     </section>
 
-    <footer>
-        <h5>Qui sommes nous :</h5>
-            <p>Antonin HEUGUET MMI B1
-            <a href="mailto:antonin.heuguet@gmail.com">antonin.heuguet@gmail.com</a>
-            </p>
-        <h5>Nos réseaux :</h5>
-          <ul>
-            <li><a href="https://twitter.com/home?lang=fr" title="Twitter">
-                <img alt="Icone Twitter" src="/assets/img/icon/Logo_Twitter.svg"/>
+<footer>
+    <div class="footer__start"> 
+        <h5 class="footer__title">Qui sommes nous :</h5>
+        <h5 class="footer__title">Nos réseaux :</h5>
+    </div>
+    <div class="footer__main">
+
+        <div class="footer__contact">
+            <p class="footer__text">Antonin HEUGUET MMI B1</p>
+            <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                <p class="footer__link">antonin.heuguet@gmail.com</p>
+            </a>
+        </div>
+
+        <div class="footer__social">
+
+            <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
+            </a>
+            
+            <a href="https://www.instagram.com/" title="Instagram">
+                    <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
+            </a>
+
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
+            </a>
+  
+            <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
                 </a>
-            </li>
-            <li><a href="https://www.instagram.com/" title="Instagram">
-                <img alt="Icone Instagram" src="/assets/img/icon/Logo_Instagram.svg"/>
-                </a>
-            </li>
-            <li><a href="https://www.facebook.com/" title="Facebook">
-                <img alt="Icone Facebook" src="/assets/img/icon/Logo_Facebook.svg"/>
-                </a>
-            </li>
-            <li><a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
-                <img alt="Icone Linkeldin" src="/assets/img/icon/Icone_Linkeldin.svg"/>
-                </a>
-            </li>
-          </ul>
-        <p> Projet réalisé dans le cadre d’un exercice pédagogique au département 
-            <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>
-        </p>
-    </footer>
+        </div>
+    </div>
+
+    <div class="footer__end">
+          <p class="footer__textend"> 
+              Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+          </p>
+      </div>
+
+</footer>
     
         
     </body>
