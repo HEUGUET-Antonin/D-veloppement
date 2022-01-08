@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femusic Page d'accueil</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <header class="headerpage">
+
+        <div class="header__start" id="#hautdepage">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__img">  
+                        De 1848 à aujourd’hui: la musique féministe
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone Anglais 2">
+                    </a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="404">
+            <h1>Erreur 404</h1>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__start"> 
+            <h5 class="footer__title">Qui sommes nous :</h5>
+            <h5 class="footer__title">Nos réseaux :</h5>
+        </div>
+        <div class="footer__main">
+    
+            <div class="footer__contact">
+                <p class="footer__text">Antonin HEUGUET MMI B1</p>
+                <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                    <p class="footer__link">antonin.heuguet@gmail.com</p>
+                </a>
+            </div>
+    
+            <div class="footer__social">
+    
+                <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                    <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
+                </a>
+                
+                <a href="https://www.instagram.com/" title="Instagram">
+                        <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
+                </a>
+    
+                <a href="https://www.facebook.com/" title="Facebook">
+                    <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
+                </a>
+      
+                <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                    <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                    </a>
+            </div>
+        </div>
+    
+        <div class="footer__end">
+              <p class="footer__textend"> 
+                  Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+              </p>
+          </div>
+    
+    </footer>
+</body>
+</html>

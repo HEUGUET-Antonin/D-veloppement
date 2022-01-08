@@ -137,7 +137,7 @@ button {
 
 .button__lire {
     margin-top: 5%;
-    margin-left: 35%;
+    margin-left: 40;
     color: var(--fond);
     background-color: var(--violet--icon2);
     font-size: 12px;
