@@ -33,12 +33,7 @@
     text-decoration: none;
     font-family: var(--font-serif);
     font-weight: 600;
-    font-size: 1rem;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 0px;
-    padding-right: 0px ;
-    
+    font-size: 1rem;    
   }
 
   .menu-btn {
@@ -94,6 +89,15 @@
   display: block;
   width: 70px;
   height: 70px;
-  margin-left: 50px ;
-  margin-right: 50px
+}
+
+.menu__icon {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__text {
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-right: 0px;
 }

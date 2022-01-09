@@ -1,0 +1,70 @@
+.erreur {
+    background: url("../../../assets/img/Img/angele_triste.png");
+    background-repeat : no-repeat;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid 10px var(--bleu--icon);
+  }
+  
+  .erreur__text {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 0%;
+    line-height: 30px;
+    text-shadow: 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond);
+  }
+  
+  .erreur__title {
+    padding-top: 150px;
+    padding-bottom: 1%;
+    text-shadow: 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond);
+  }
+
+  .erreur__title2 {
+    padding-left: 0%;
+    margin-top: 0%;
+    text-shadow: 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond), 0 0 2px var(--fond);
+
+  }
+
+  .erreur__form {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .erreur__messagecase {
+    padding: 2% 17% 2% 3%;
+    margin: -2%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: solid 2px var(--blanc);
+  }
+    ::placeholder {
+        font-style: italic;
+        color: var(--blanc);
+    }
+
+  .erreur__button {
+    padding: 3% 4% 3% 3%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--violet--icon2);
+    border: solid 2px var(--blanc);
+    font-size: 10px;
+    font-family: var(--font-sans-serif);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+.erreur a {
+    
+    text-align: center;
+}
