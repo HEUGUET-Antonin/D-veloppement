@@ -11,6 +11,19 @@
     color: var(--fond);
 }
 
+.article__title1 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1rem;
+    padding-top: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 3%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    color: var(--fond);
+}
+
 .article__text {
     padding-left: 3% ;
     padding-right: 3%;
@@ -38,6 +51,7 @@
 .article__img2 {
     width: 40%;
     height: 40%;
+    margin-bottom: 3%;
 }
 
 .article img {
@@ -51,7 +65,7 @@
     border-radius: 50% 20% / 10% 40%;
     margin: 5%;
     margin-top: 10%;
-    box-shadow: 10px 5px var(--bleu--fonce);
+    box-shadow: 10px 5px var(--bleu--fonce2);
 }
 
 .article__button {

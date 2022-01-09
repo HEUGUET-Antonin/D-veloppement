@@ -72,6 +72,9 @@ h4 {
 h5 {
   font-family: var(--font-sans-serif);
   font-size: 16px;
+  color: var(--blanc);
+  font-weight: 400;
+  padding-left: 8%;
 }
 
 article {
@@ -137,7 +140,7 @@ button {
 
 .button__lire {
     margin-top: 5%;
-    margin-left: 40;
+    margin-left: 40%;
     color: var(--fond);
     background-color: var(--violet--icon2);
     font-size: 12px;
@@ -171,4 +174,29 @@ button {
 
 .pages__fin {
   margin-top: 15%;
+}
+
+.article__guillemet {
+  width: 62px;
+  height: 34px;
+  padding-left: 20px;
+}
+
+.article__guillemet2 {
+  width: 52px;
+  height: 34px;
+  transform: rotate(180deg);
+  margin-left: 293px;
+  margin-bottom: 5%;
+}
+
+.article__citation {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-style:italic;
+  font-style: weight 700;
+  color: var(--bleu--fonce2);
 }
