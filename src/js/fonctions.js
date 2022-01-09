@@ -21,7 +21,8 @@ function carrousel() {
             if (ind == 5) return 6*delta +5*d
             if (ind == 6) return 7*delta + 6*d;
             if (ind == 7) return 8*delta + 7*d;
-            return 8*delta + 7*d;
+            if (ind == 8) return 9*delta + 8*d;
+            return 9*delta + 8*d;
         }
     });
     anim15.add({

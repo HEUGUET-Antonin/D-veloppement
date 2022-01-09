@@ -3,7 +3,6 @@
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    position: fixed;
     display: flex;
     position: fixed;
     top: 0; bottom: 0;
@@ -25,7 +24,10 @@
   }
   
   .menu__item {
+    flex-direction: column;
     margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   
   .menu__link  {
@@ -77,27 +79,50 @@
     top: 0;
   }
 
+
   .menu__underlist {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     text-align: center;
     text-transform: uppercase;
     }
 
   
 .menu__list img {
+  margin-left: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vh;
   display: block;
   width: 70px;
   height: 70px;
 }
 
+  .menu__item__img {
+    margin-left: 3.2vh !important;
+  }
+
+  .menu__item__img2 {
+    margin-left: 1.2vh !important;
+  }
+
+.menu__list p {
+    padding-left: 0%; 
+    padding-right: 0%;
+}
+
+/*
 .menu__icon {
-  display: flex;
-  justify-content: center;
+
+
 }
 
 .menu__text {
-  padding-left: 0%;
-  padding-right: 0%;
-  margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 20px;
 }
+
+*/

@@ -1,8 +1,29 @@
 .rectangle {
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10%;
     width: 22.188rem;
     height: 1.25rem;
     background-color: var(--bleu--icon);
+    border-radius: 60px;
+}
+
+.rectangle2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10%;
+    width: 22.188rem;
+    height: 1.25rem;
+    background-color: var(--bleu---texte);
+    border-radius: 60px;
+}
+
+.rectangle3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10%;
+    width: 22.188rem;
+    height: 1.25rem;
+    background-color: var(--bleu--fonce);
     border-radius: 60px;
 }

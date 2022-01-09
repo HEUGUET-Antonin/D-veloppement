@@ -78,11 +78,11 @@
 
             <h2 class="erreur__text">La page que vous cherchez semble introuvable / page not found </h2>
             <h2 class="erreur__text">Code d'erreur : 404</h2>
-            <h3 class="erreur__title2">Vous cherchez quelque chose ?</h3>
+            <h3 class="erreur__title2">Une recherche quelconque ?</h3>
             <form action="https://www.google.fr//" method="GET" 
                 x-data="{ q:'', }" 
                 x-on:submit="q = q + ' site: femusic.antonin-heuguet.fr/'" class="erreur__form">
-                        <input type="text" id="q" name="q" x-model="q" placeholder="Tapez le texte ici..." required class="erreur__messagecase">
+                        <input type="text" id="q" name="q" x-model="q" placeholder="Tapez ici" required class="erreur__messagecase">
                     <button type="submit" class="erreur__button">Rechercher</button>
             </form>
             <h3 class="erreur__title2">Retournez à la page d'accueil :</h3>

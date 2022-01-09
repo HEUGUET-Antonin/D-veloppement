@@ -1,0 +1,54 @@
+.frise {
+    background: url("../../../assets/img/Img/Frise.png");
+    background-repeat : no-repeat;
+    background-position: center;
+    margin-left: 30px;
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    z-index: 0;
+}
+
+.frise__title {
+    color: var(--fond);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 40%;
+    margin-top: 15%;
+    margin-right: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.frise__title2 {
+    color: var(--fond);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 40%;
+    margin-top: 45%;
+    margin-right: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.frise__title3 {
+    color: var(--fond);
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 40%;
+    margin-top: 48%;
+    margin-right: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.frise__carre {
+    height: 30px;
+    width: 30px;
+    background: var(--fond);
+    border: solid 2px var(--blanc);
+    z-index: 5;
+    transform: rotate(45deg);
+}
