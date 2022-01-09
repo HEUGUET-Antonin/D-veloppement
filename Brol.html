@@ -70,7 +70,17 @@
         </div>
     </header>
 
-<h1>« Brol », un album engagé </h1>
+<h1 id="haut">« Brol », un album engagé </h1>
+
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+        };
+    });
+</script>
+</div>
 
 <p class="pages__intro">"Brol" est le premier album de l'artiste Angèle. Le titre de celui-ci est un mot flamand 
     qui signifie "désordre". Ce mot, choisi par l'artiste lui évoque son enfance et son pays, 

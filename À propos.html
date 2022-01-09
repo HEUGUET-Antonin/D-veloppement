@@ -74,7 +74,17 @@
     </div>
 </header>
 
-    <h1>À propos </h1>
+    <h1 id="haut">À propos </h1>
+    
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                };
+            });
+        </script>
+    </div>
         <div class="rectangle"></div>
         <h2>Qui suis-je ?</h2>
         <p>Je suis Antonin Heuguet actuellement  étudiant en première année de MMI (Métier du multimédia et de l'internet) 

@@ -73,25 +73,21 @@
     </header>
 
     <main>
+        <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                };
+            });
+        </script>
     <div class="hero" id="haut">
-        <h1 class="hero__title">La musique :  porte-parole du féminisme </h1>
-
-            <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
-
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                    window.onscroll = function(ev) {
-                    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
-                        };
-                    });
-                </script>
-            </div>
-
+        <h1 class="hero__title" id="haut">La musique :  porte-parole du féminisme </h1>
         <p class="hero__text"> Femusic est un site dédié à la cause féministe dans le monde de la musique.</p>
         <p class="hero__text">Découvrez des articles complets, actuels et passionnants mêlant   
         musique et féminisme. </p>
         <a href="#debut__page" class="hero__img"><img src="assets/img/boutons_actions/Icone_Chevrons_vers_bas.svg" alt="Icone chevrons vers le bas"></a>
-        <a href="#hautdepage" class="hero__icon"><img src="assets/img/boutons_actions/Icone_remonter_haut_page.svg" alt="Icone remonter haut de page" class="hero__icon__img"> </a>
     </div>
 <article class="article" id="debut__page">
         <h2 class="article__title"> Angèle, la voix du féminisme </h2>

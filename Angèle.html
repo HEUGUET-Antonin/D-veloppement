@@ -70,7 +70,16 @@
         </div>
     </header>
 
-<h1>Angèle, la voix du féminisme</h1>
+<h1 id="haut">Angèle, la voix du féminisme</h1>
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                };
+            });
+        </script>
+    </div>
 
 <p class="pages__intro">Angèle Van Laeken plus connue sous son nom d'artiste "Angèle" est une jeune
 chanteuse Belge, née le 3 décembre 1995. Angèle est aujourd'hui une figure du 

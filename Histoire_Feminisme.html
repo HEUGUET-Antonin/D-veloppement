@@ -70,7 +70,17 @@
         </div>
     </header>
 
-<h1>De 1848 à aujourd'hui : la musique féministe</h1>
+<h1 id="haut">De 1848 à aujourd'hui : la musique féministe</h1>
+
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+        };
+    });
+</script>
+</div>
 
 <p class="pages__intro">La musique au travers des époques a permis de partager ses idées, de dénoncer, de rassembler… 
     C'est le cas pour le <a href="Glossaire.html#féminisme" title="Glossaire" class="pages__mots">féminisme</a>, au fil des années, 
