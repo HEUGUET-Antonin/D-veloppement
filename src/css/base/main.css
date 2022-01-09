@@ -201,3 +201,8 @@ button {
   color: var(--bleu--fonce2);
 }
 
+audio {
+  padding-left: 10%;
+  padding-bottom: 3%;
+}
+
