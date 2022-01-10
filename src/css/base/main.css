@@ -198,7 +198,7 @@ button {
   line-height: 1.5rem;
   font-style:italic;
   font-style: weight 700;
-  color: var(--bleu--fonce2);
+  color: var(--bleu--icon);
 }
 
 audio {
