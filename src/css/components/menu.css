@@ -41,7 +41,8 @@
   .menu-btn {
     position: relative;
     z-index: 3;
-    width: 30px;  
+    width: 30px;
+    padding: 18%;  
   }
   
   .menu-btn__bar,

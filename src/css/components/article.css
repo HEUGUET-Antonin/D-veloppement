@@ -69,6 +69,10 @@
     box-shadow: 10px 5px var(--bleu--fonce2);
 }
 
+.article1 {
+    margin-top: 27%;
+}
+
 .article__button {
     text-transform: uppercase;
     letter-spacing: 2px;

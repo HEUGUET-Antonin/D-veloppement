@@ -52,3 +52,7 @@
     display: flex;
     position: fixed;
 }
+
+.hero__img {
+    margin-top: 10%;
+}

@@ -108,3 +108,7 @@
     text-align: center;
     transform: rotate(-45deg);
 }
+
+.frise__carre:hover {
+    border: solid 5px var(--blanc);
+}
