@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femusic Article Angèle</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="headerpage">
+
+        <div class="header__start" id="#hautdepage">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle" class="menu__item__img">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__item__img">  
+                        <p>De 1848 à aujourd’hui: la musique féministe </p>
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire" class="menu__item__img2">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone anglais">
+                    </a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<h1 id="haut">Angèle, la voix du féminisme</h1>
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                };
+            });
+        </script>
+    </div>
+
+<p class="pages__intro">Angèle Van Laeken plus connue sous son nom d'artiste "Angèle" est une jeune
+chanteuse Belge, née le 3 décembre 1995. Angèle est aujourd'hui une figure du 
+<a href="Glossaire.html#féminisme" title="Glossaire" class="pages__mots">féminisme</a> à part entière et ce dans toute l'Europe.     
+</p>
+<figure>
+<img src="assets/img/Img/5e175a5323b1291.webp" alt="Photo d'Angèle" class="pages__img">
+<figcaption class="pages__legende">Angèle Van Laeken</figcaption>
+</figure>
+<h2>Qui est Angèle ?</h2>
+<h3>Sa jeunesse</h3>
+
+<p>Angèle est née à Uccle en Belgique d'un père chanteur et d'une mère comédienne : 
+    <a href="Galerie.html#parents" title="Galerie" class="pages__mots">Serge Van Laeken </a> dit "Marka" et 
+    <a href="Galerie.html#parents" title="Galerie" class="pages__mots">Laurence Bibot</a>. Elle est  aussi la sœur du rappeur 
+    <a href="Galerie.html#frère" title="Galerie" class="pages__mots">Roméo Elvis</a>. La jeune fille grandit dans la commune 
+    flamande de Linkebeek. Elle se lance rapidement dans le monde de la musique encouragé par ses parents et commence à jouer du piano.
+</p>
+
+<p>Son début d'adolescence est difficile étudiant dans un collège catholique très stricte mais
+     elle rejoint le lycée Decroly où elle peut s'épanouir davantage grâce aux options artistiques proposés.
+</p>
+
+<p>Cette école lui permet de rejoindre une école de jazz. Angèle débute en parallèle sa "carrière" musicale 
+en intégrant le groupe de musique de son père et donne ses premiers concerts dans des cafés Bruxellois. 
+</p>
+
+<h3>Sa carrière</h3>
+
+<p>Durant l'année 2016, elle commence à se faire connaître grâce à ses reprises sur Instagram, ainsi que sa 
+    reprise du morceau "Bruxelles" de Dick Annegarn. 
+</p>
+
+<p>En 2017, son ascension débute, en effet Angèle assure les premières parties du groupe "Ibeyi" et le rappeur belge Damso.
+     Fin d'année la chanteuse sors son premier morceau "La loi de Murphy" qui compatibilise une trentaine de millions de vues 
+     sur YouTube. 
+</p>
+
+<p>Elle sort son deuxième single durant l'année 2018 "Je veux tes yeux". Le single compatibilise aujourd'hui 
+    une vingtaine de millions de vues. Par la suite, Angèle enchaîne son premier concert, festivales francophones, 
+    featuring avec Damso et sort son troisième single "La Thune". Le morceau compte 29 millions de vues sur YouTube. 
+    Angèle devient de plus en plus connue du grand public et annonce son premier album "Brol".
+</p>
+
+<p>Durant l'année 2019, l'artiste fonde son propre label "Angèle VL Records", le 8 novembre sors la réédition de son 
+    album et celui-ci reçoit le titre d'album de l'année lors des Victoires de la musique.
+</p>
+
+<p>Angèle est de retour bientôt après quelques featuring et concerts. En effet, son prochain album « 95 » est annoncé 
+    pour le 10 Décembre de cette année.
+</p>
+<figure>
+<img src="assets/img/Img/Angele-son-album-Nonante-cinq-sort-le-10-decembre-prochain1.webp" alt="Cover Album Nonante-cinq" class="pages__img">
+<figcaption class="pages__legende">Cover du prohain album d’Angèle : “95”</figcaption>
+</figure>
+
+<h2>Angèle, artiste et féministe </h2>
+
+<p>Angèle depuis ses débuts est clairement engagée contre le sexisme et souhaite prouver que les femmes 
+    ont leurs places dans le monde la musique. 
+</p>
+
+<p>En effet, en 2018 lors d'une interview pour Télérama celle-ci dira : "Dans le monde musical, 
+    je sens un sexisme encore très fort". La chanteuse ajoute aussi que beaucoup n'intègre pas qu'une jeune 
+    femme puisse écrire, composer et produire seule ses morceaux. L'artiste s'assume comme étant féministe et 
+    veut se battre contre le sexisme notamment ce problème récurrent de ramenée la femme à son physique.  
+</p>
+
+<p>Le 14 avril 2019 la jeune femme dévoile le clip de "Balance ton quoi" son single féministe présent sur son album. 
+    Le morceau est considéré comme un hymne féministe et est jouée lors des marches ou des manifestations féministes. 
+    Dans ce titre Angèle mets en avant les mouvements féministes <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire" class="pages__mots">
+    "Balance ton porc"</a> et <a href="Glossaire.html#BalanceTonPorc_MeToo" title="Glossaire" class="pages__mots">"Me too"</a>.
+</p>
+
+<figure>
+<img src="assets/img/Img/maxresdefault(1)1.webp" alt="Extrait clip Balance Ton Quoi" class="pages__img">
+<figcaption class="pages__legende">Extrait du clip de “Balance Ton Quoi”</figcaption>
+</figure>
+
+<h2>Féministe, mais pas seulement !</h2>
+
+<p>Angèle s'engage dans de nombreuses causes autres du féminisme. 
+    En effet, l'artiste lutte contre le cancer, défend la cause LGBT et la cause écologique.
+</p>
+
+<p>En mai 2019, la chanteuse belge annonce sa collaboration avec la fondation KickCancer. 
+    Cette association lutte contre le cancer pédiatrique et organise des courses caritatives. 
+    Angèle devient la marraine de la fondation cette même année et participe à une course le 29 septembre 2019. 
+    En février 2021, l'artiste organise une tombola solidaire pour l'association. De nombreux prix sont à gagner 
+    d'elle mais aussi d'autres artistes tels que Dua Lipa, Pierre Niney et bien d'autres
+</p>
+
+<figure>
+<img src="assets/img/Img/B9721071987Z.1_20190929154132_000+G0EEIRJS11.webp" alt="Angèle durant la course KickCancer" class="pages__img">
+<figcaption class="pages__legende">Angèle participant à la course KickCancer</figcaption>
+</figure>
+
+<p>Pour finir, Angèle mets à l'honneur la cause LGBT dans son morceau "Ta reine" ainsi que la 
+    lutte contre le réchauffement climatique. En effet, en Juillet 2019 l'artiste dévoile le son 
+    "Il sera trop tard" dans lequel elle tire l'alarme sur la situation actuelle
+</p>
+
+<p>Pour plus de détails sur les différentes chansons engagées d'Angèle présente dans son album 
+    "Brol" n'hésitez pas à lire notre article sur le sujet.
+</p>
+
+<button onclick="window.location.href = 'Brol.html'" class="button__lire">Lire</button>
+
+<footer>
+    <div class="footer__start"> 
+        <h5 class="footer__title">Qui sommes nous :</h5>
+        <h5 class="footer__title">Nos réseaux :</h5>
+    </div>
+    <div class="footer__main">
+
+        <div class="footer__contact">
+            <p class="footer__text">Antonin HEUGUET MMI B1</p>
+            <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                <p class="footer__link">antonin.heuguet@gmail.com</p>
+            </a>
+        </div>
+
+        <div class="footer__social">
+
+            <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
+            </a>
+            
+            <a href="https://www.instagram.com/" title="Instagram">
+                    <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
+            </a>
+
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
+            </a>
+  
+            <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                </a>
+        </div>
+    </div>
+
+    <div class="footer__end">
+          <p class="footer__textend"> 
+              Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+          </p>
+      </div>
+
+</footer>
+
+</body>
+</html>

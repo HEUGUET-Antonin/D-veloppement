@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femusic Article Histoire Féminisme</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="headerpage">
+
+        <div class="header__start" id="#hautdepage">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle" class="menu__item__img">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__item__img">  
+                        <p>De 1848 à aujourd’hui: la musique féministe </p>
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire" class="menu__item__img2">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone anglais">
+                    </a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<h1 id="haut">De 1848 à aujourd'hui : la musique féministe</h1>
+
+<div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    window.onscroll = function(ev) {
+    document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+        };
+    });
+</script>
+</div>
+
+<p class="pages__intro">La musique au travers des époques a permis de partager ses idées, de dénoncer, de rassembler… 
+    C'est le cas pour le <a href="Glossaire.html#féminisme" title="Glossaire" class="pages__mots">féminisme</a>, au fil des années, 
+    le mouvement féministe a été partagé via la musique 
+    et a permis aux femmes du monde entier de s'exprimer librement. Cet article a pour but de présenter 
+    quelques-unes de ces musiques représentatives du mouvement depuis 1848 à nos jours.      
+</p>
+
+<!--Frise-->
+
+<div class="frise">
+    <div class="frise__bloc1">
+        <a href="#son1"><div class="frise__carre"><p>1848</p></div></a>
+        <a href="#son2"><div class="frise__carre"><p>1898</p></div></a>
+        <a href="#son3"><div class="frise__carre"><p>1911</p></div></a>
+    </div>
+    <div class="frise__bloc2">
+        <a href="#son4"><div class="frise__carre"><p>1971</p></div></a>
+        <a href="#son5"><div class="frise__carre"><p>1974</p></div></a>
+        <a href="#son6"><div class="frise__carre"><p>1975</p></div></a>
+    </div>
+    <div class="frise__bloc3">
+        <a href="#son7"><div class="frise__carre"><p>2011</p></div></a>
+        <a href="#son8"><div class="frise__carre"><p>2017</p></div></a>
+        <a href="#son9"><div class="frise__carre"><p>2018</p></div></a>
+    </div>
+</div>
+
+    <div class="rectangle" id="son1"></div>
+<section>
+<h2>La musique de 1848 à 1911</h3>
+
+<h3>La marseillaise des cotillons – 1848</h3>
+<p>"La marseillaise des cotillons" est un hymne féministe reprenant l'hymne nationale 
+    "La marseillaise". Le texte est écrit par Louise de Chaumont est paraît dans le journal 
+    "La République des femmes, journal des cotillons" en 1848. Les paroles dénoncent l'inégalité 
+    homme femme et font l'apologie du sexe féminin.
+</p>
+<h5>Extrait (interprété par Rosalie Dubois) :</h5>
+<audio src="assets/Sons/ExtraitMarseillaiseCotillons.mp3" controls></audio>
+    <div class="rectangle" id="son2"></div>
+<h3>Fille d'ouvriers – 1898</h3>
+<p>"Fille d'ouvriers" est une chanson de Jules Jouy datant de 1898. La chanson décrit les conditions 
+    des ouvrières de l'époque en retraçant leur histoire de leurs naissances jusqu'à leurs morts. 
+    Le texte évoque leurs travaux difficiles, leurs pauvretés et les crimes que ces femmes subissent : 
+    viol et prostitution. Cette chanson a été interpréter de nombreuses fois jusqu'en 2016 par Agnès Bihl.
+</p>
+<h5>Extrait (interprété par Michèle Bernard) :</h5>
+<audio src="assets/Sons/ExtraitFilleDouvriers.mp3" controls></audio>
+<div class="rectangle" id="son3"></div>
+<h3>Bread and Roses - 1911</h3>
+<p>"Bread and Roses" (Du pain et des roses) est un poème de James Oppenheim publié en 1911 dans 
+    "The American Magazine". James Oppenheim dédie ce texte "aux femmes de l'Ouest" et son titre est 
+    repris comme slogan lors des <a href="Glossaire.html#Bread&Roses" title="Glossaire">"Bread and Roses strike"</a>. 
+    À travers ce slogan, les manifestantes réclament un meilleur salaire et de meilleures conditions de travails.
+</p>
+<h5>Extrait (interprété par Judy Collins) :</h5>
+<audio src="assets/Sons/ExtraitBreadRoses.mp3" controls></audio>
+</section>
+
+<div class="rectangle2" id="son4"></div>
+<section>
+    <h2>La musique de 1911 à 1975</h2>
+    
+    <h3>Hymne du MLF – 1971</h3>
+    <p>"L'hymne du MLF" est une chanson crée collectivement en 1971 par des militantes féministes. 
+        Cette chanson est devenue un emblème du mouvement de libération des femmes et plus généralement 
+        des luttes féministes francophones. Le refrain de cette musique est repris de temps en temps 
+        comme slogan lors de manifestations : "Levons-nous femmes esclaves Et brisons nos entraves Debout, debout, debout !"
+    </p>
+    <h5>Extrait :</h5>
+    <audio src="assets/Sons/ExtraitHymneMLF.mp3" controls></audio>
+    <div class="rectangle2" id="son5"></div>    
+    <h3>Non, tu n'as pas de nom – 1974</h3>
+    <p>"Non, tu n'as pas de nom" est une musique d'<a href="Galerie.html#Anne_Sylvestre" title="Galerie" class="pages__mots">
+        Anne Sylvestre</a> sortie en 1974 soit un an avant la loi 
+        Veil qui légalise l'avortement en France. Dans cette chanson, Anne met la problématique de donner 
+        naissance ou non à son époque. En effet, l'avortement était autrefois illégal et était donc bien plus dur
+        à réaliser pour une femme et dans des conditions plus dures.
+    </p>
+    <h5>Extrait :</h5>
+    <audio src="assets/Sons/ExtraitNonNom.mp3" controls></audio>
+    <div class="rectangle2" id="son6"></div> 
+    <h3>La femme est l'avenir de l'homme – 1975</h3>
+    <p>"La femme est l'avenir de l'homme" est une chanson féministe de Jean Ferrat sortie en 1975. 
+        Le chanteur prône le renversement du <a href="Glossaire.html#patriarcat" title="Glossaire" class="pages__mots">patriarcat</a>
+         dans un futur proche, par les prochaines générations.
+    </p>
+    <h5>Extrait :</h5>
+    <audio src="assets/Sons/ExtraitFemmeAvenirHomme.mp3" controls></audio>
+    </section>
+    <div class="rectangle3" id="son7"></div> 
+    <section>
+        <h2>La musique de nos jours</h2>
+        
+        <h3>Run the World (Girls) – 2011</h3>
+        <p>"Run the World" est un single de la chanteuse <a href="Galerie.html#Beyoncé" title="Galerie" class="pages__mots">Beyoncé</a> 
+            qui est sortie en 2011. La musique met en avant l'autonomisation des femmes, leurs émancipations. 
+            Elle met en avant la force, la puissance des femmes, en effet, dans son refrain Beyoncé 
+            répète une dizaine de fois le vers suivant "Who run the world ? Girls !"
+        </p>
+        <h5>Extrait :</h5>
+        <audio src="assets/Sons/ExtraitRunTheWorld.mp3" controls></audio>
+        <div class="rectangle3" id="son8"></div> 
+        <h3>La grenade – 2017</h3>
+        <p>"La grenade" est une musique de <a href="Galerie.html#Clara_Luciani" title="Galerie" class="pages__mots">Clara Luciani</a> 
+            sortie en 2017. Le morceau, très actuelle est rapidement devenue un véritable hymne féministe. Dans ce morceau, 
+            Clara met en valeur la force des femmes notamment dans son refrain où la chanteuse 
+            répète le vers suivant : "Sous mon sein, la grenade".Elle exprime ici, le fait que certains
+            peuvent sous-estimer une femme à cause de son sexe mais que celle-ci peux être dangereuse : forte.
+        </p>
+        <h5>Extrait :</h5>
+        <audio src="assets/Sons/ExtraitGrenade.mp3" controls></audio>
+        <div class="rectangle3" id="son9"></div> 
+        <h3>God Is a Woman - 2018</h3>
+        <p>"God Is a Woman" est un morceau féministe de la chanteuse <a href="Galerie.html#Ariana_Grande" title="Galerie" class="pages__mots">
+            Ariana Grande</a> sortie en 2018. Dans cette musique, l'artiste prône une image forte et glorieuse de 
+            la femme et utilise l'image de Dieu pour mettre en avant la force des femmes. Cette chanson illustre le combat
+            quotidien et incite à la libération féminine.
+        </p>
+        <h5>Extrait :</h5>
+        <audio src="assets/Sons/ExtraitGodisWoman.mp3" controls></audio>
+        </section>
+        <div class="rectangle3" id="son9"></div> 
+        <section>
+            <p class="pages__conclusion">Comme nous avons pu le voir la musique au fil des années et depuis longtemps 
+                a permis aux femmes de s'exprimer librement. 
+            </p>
+            <p class="pages__conclusion">De nos jours, de plus en plus d'artistes hommes ou femmes soutiennent les causes 
+                féministes dans la musique comme Angèle, Ariana Grande, Beyoncé, Grand Corps Malade...
+            </p>
+        </section>
+
+        <section><p class="pages__fin">J’espère que ces articles vous ont appris quelque chose sur le domaine de la 
+            musique féministe ou alors qu’ils vous ont rappelés des musiques que vous avez déjà écouté !
+            Si vous avez des questions ou des commentaires à me transmettre je vous invite à vous rendre 
+            sur la page à propos et remplir le formulaire de contact
+            </p>
+            <button onclick="window.location.href = 'À propos.html'" class="button__apropos">À propos</button>
+        </section>
+
+        <footer>
+            <div class="footer__start"> 
+                <h5 class="footer__title">Qui sommes nous :</h5>
+                <h5 class="footer__title">Nos réseaux :</h5>
+            </div>
+            <div class="footer__main">
+        
+                <div class="footer__contact">
+                    <p class="footer__text">Antonin HEUGUET MMI B1</p>
+                    <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                        <p class="footer__link">antonin.heuguet@gmail.com</p>
+                    </a>
+                </div>
+        
+                <div class="footer__social">
+        
+                    <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                        <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/" title="Instagram">
+                            <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
+                    </a>
+        
+                    <a href="https://www.facebook.com/" title="Facebook">
+                        <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
+                    </a>
+          
+                    <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                        <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                        </a>
+                </div>
+            </div>
+        
+            <div class="footer__end">
+                  <p class="footer__textend"> 
+                      Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+                  </p>
+              </div>
+        
+        </footer>
+
+</body>
+</html>

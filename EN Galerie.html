@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femusic Galerie</title>
+    
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="headerpage">
+
+        <div class="header__start" id="#hautdepage">
+            <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+        </div>
+
+        <div class="header__main">
+            <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                            <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle" class="menu__item__img">
+                            Angèle, la voix du féminisme
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Brol.html">
+                            <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                            “Brol”, un album engagé
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                        <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__item__img">  
+                        <p>De 1848 à aujourd’hui: la musique féministe </p>
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                        <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire" class="menu__item__img2">  
+                        Glossaire 
+                    </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                        <li class="menu__item"><a class="menu__link" href="À propos.html">
+                            <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                            À propos
+                        </a></li>
+                        <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                            <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                            Galerie
+                        </a></li>
+                    </ul>
+                    <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="index.html">
+                        <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                        <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone anglais">
+                    </a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 id="haut">Galerie</h1>
+
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        window.onscroll = function(ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+            };
+        });
+    </script>
+</div>
+
+    <section>
+        <div class="rectangle"></div>
+        <h2>Famille d’Angèle</h2>
+        <div id="parents">
+        <h3>Ses parents</h3>
+        <img src="assets/img/Img/3214a6d842cc69597f9edf26df552e43-14576155471.webp" alt="Parents_Angèle" class="pages__img">
+       <p> Marka de son vrai nom Serge Van Laeken est né le 27 mai 1961 et est un chanteur belge francophone. 
+        Sa femme, Laurence Bibot est une comédienne et humouriste belge née en 1968 à Bruxelles. 
+        </p>
+        </div>
+        <div id="frère">
+        <h3>Son frère</h3>
+        <img src="assets/img/Img/Romeo-Elvis-revient-sur-les-accusations-d-agressions-sexuelles1.webp" alt="Roméo_Elvis" class="pages__img">
+        <p>Roméo Elvis de son vrai nom Roméo Van Laeken est un rappeur belge. Il est née le 13 décembre 1962. 
+            Ses sons les plus connues sont « Soleil », son featuring avec sa sœur « Tout oublier » et « Malade ». 
+        </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="rectangle"></div>
+        <h2>Chanteuses féministes</h2>
+        <div id="Anne_Sylvestre">
+        <h3>Anne Sylvestre</h3>
+        <img src="assets/img/Img/image3.webp" alt="Anne_Sylvestre" class="pages__img">
+       <p> De son vrai nom Anne-Marie Thérèse Beugras est née le 20 Juin 1934 et est morte le 
+           30 Novembre 2020. C’est une chanteuse française féministe qui est connu pour les chansons
+            « Mon mari est parti »,  « Petit bonhomme » ou encore « Douce maison ». 
+        </p>
+        </div>
+
+        <div id="Beyoncé">
+        <h3>Beyoncé</h3>
+        <img src="assets/img/Img/61138d542800007ac17047661.webp" alt="Beyoncé" class="pages__img">
+       <p>  Beyoncé Giselle Knowles est née le 4 septembre 1981, est une artiste R’n’B et pop. Ses chansons 
+           les plus connues sont «Crazy in love», «Single ladies» et «Check on it». 
+        </p>
+        </div>
+
+        <div id="Clara_Luciani">
+        <h3>Clara Luciani</h3>
+        <img src="assets/img/Img/prio-clara-luciani-5-fiona-torre_5f92d8bb36f011.webp" alt="Clara_Luciani" class="pages__img">
+       <p> Clara Luciani est une chanteuse et compositrice française. Elle naît le 10 juillet 1992 à Martigues,
+            et se fait remarquer grâce au groupe La Femme avant de connaître le succès en solo. 
+            Ses morceaux les plus connues sont «La grenade», «le Reste» et «On ne meurt pas d’amour». 
+        </p>
+        </div>
+
+        <div id="Ariana_Grande">
+        <h3>Ariana Grande </h3>
+        <img src="assets/img/Img/Ariana-Grande-les-premieres-photos-de-son-mariage-avec-Dalton-Gomez1.webp" alt="Ariana_Grande" class="pages__img">
+       <p> Ariana Grande-Butera est une chanteuse et actrice américaine. Elle s'est fait connaître 
+           pour son rôle de Cat Valentine dans les séries « Victorious » et «Sam & Cat». Ses singles 
+           les plus connues sont «love me harder», «Break Free» et «Slide to Side».  
+        </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__start"> 
+            <h5 class="footer__title">Qui sommes nous :</h5>
+            <h5 class="footer__title">Nos réseaux :</h5>
+        </div>
+        <div class="footer__main">
+    
+            <div class="footer__contact">
+                <p class="footer__text">Antonin HEUGUET MMI B1</p>
+                <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                    <p class="footer__link">antonin.heuguet@gmail.com</p>
+                </a>
+            </div>
+    
+            <div class="footer__social">
+    
+                <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                    <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
+                </a>
+                
+                <a href="https://www.instagram.com/" title="Instagram">
+                        <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
+                </a>
+    
+                <a href="https://www.facebook.com/" title="Facebook">
+                    <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
+                </a>
+      
+                <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                    <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                    </a>
+            </div>
+        </div>
+    
+        <div class="footer__end">
+              <p class="footer__textend"> 
+                  Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+              </p>
+          </div>
+    
+    </footer>
+
+    
+</body>
+</html>

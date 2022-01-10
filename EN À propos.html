@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femusic À propos </title>
+    
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
+
+</head>
+
+<body>
+  <header class="headerpage">
+
+    <div class="header__start" id="#hautdepage">
+        <a href="index.html"><img src="assets/img/icon/Icone_Home.svg" alt="Icone Home"></a>
+    </div>
+
+    <div class="header__main">
+        <p class="header__title" style="margin: 0;"><a href="index.html">Femusic</a></p>
+    </div>
+
+    <div class="header__end">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+        @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+        <span class="menu-btn__bar"></span>
+        </button>
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Angèle.html">
+                        <img src="assets/img/icon/Icone_Article_Angele.png" alt="Icone Article Angèle" class="menu__item__img">
+                        Angèle, la voix du féminisme
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Brol.html">
+                        <img src="assets/img/icon/Icone_Article_Brol.png" alt="Icone Article Brol">
+                        “Brol”, un album engagé
+                    </a></li>
+                </ul>
+                <ul class="menu__underlist list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="Histoire_Feminisme.html"> 
+                    <img src="assets/img/icon/Icone_Article_Feminisme_Musique.png" alt="Icone Article Histoire du feminisme" class="menu__item__img">  
+                    <p>De 1848 à aujourd’hui: la musique féministe </p>
+                </a></li>
+                <li class="menu__item"><a class="menu__link" href="Glossaire.html">
+                    <img src="assets/img/icon/Icone_Glossaire.png" alt="Icone Glossaire" class="menu__item__img2">  
+                    Glossaire 
+                </a></li>
+                </ul>
+                <ul class="menu__underlist list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="À propos.html">
+                        <img src="assets/img/icon/Icone_Apropos.png" alt="Icone A propos">
+                        À propos
+                    </a></li>
+                    <li class="menu__item"><a class="menu__link" href="Galerie.html">
+                        <img src="assets/img/icon/Icone_Galerie.png" alt="Icone galerie">
+                        Galerie
+                    </a></li>
+                </ul>
+                <ul class="menu__underlist list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="index.html">
+                    <img src="assets/img/icon/Icone_France.png" alt="Icone france">
+                </a></li>
+                <li class="menu__item"><a class="menu__link" href="EN index.html">
+                    <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone anglais">
+                </a></li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <h1 id="haut">À propos </h1>
+    
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+                };
+            });
+        </script>
+    </div>
+        <div class="rectangle"></div>
+        <h2>Qui suis-je ?</h2>
+        <p>Je suis Antonin Heuguet actuellement  étudiant en première année de MMI (Métier du multimédia et de l'internet) 
+            à Montbéliard. 
+        </p>
+        <p>Ce site est un projet réalisé dans le cadre d'un exercice pédagogique au sein de l'établissement </p>
+    </section> 
+
+    <section>
+        <div class="rectangle"></div>
+        <h2>Me contacter</h2>
+        <p>N'hésitez pas à me poser des questions ou à me transmettre des commentaires via mon adresse mail 
+            en remplissant le formulaire ci-dessous ! 
+        <form action="#" method="post" class="contact__form">
+
+          <p class="contact__form__text">
+        <label for="firstname" class="contact__textname">Nom : *
+            <input type="text" id="firstname" name="first-name" value="" required class="contact__namecase">
+          </label>
+        </p>
+
+        <p class="contact__form__text">
+          <label for="lastname" class="contact__textlastname">Prénom : *
+            <input type="text" id="lastname" name="last-name" value="" required class="contact__lastnamecase">
+          </label>
+        </p>
+
+        <p class="contact__form__text">
+          <label for="email" class="contact__textmail"> Adresse mail : *
+            <input type="email" id="email" name="email" value="" required class="contact__mailcase">
+          </label>
+        </p>
+
+        <p class="contact__form__text">
+            <label for="message" class="contact__textmessage">Message :   *<br>
+              <textarea type="text" id="message" name="message" placeholder="Tapez ici votre message" value="" class="contact__messagecase">
+              </textarea>
+            </label>
+        </p>
+        <p class="contact__form__obligatoire">*   obligatoire</p>
+            <button type="submit" class="contact__button">Envoyer</button>
+          
+    </form>
+    </section>
+
+    <section>
+        <div class="rectangle"></div>
+        <h2>Autres projets</h2>
+        <p>Ce site a été créé dans le cadre d'un projet de fin de semestre de la première année de BUT MMI à Montbéliard. 
+        </p>
+       <p>Si vous avez aimé mon projet, je vous invite donc à consulter les autres sites présentés ci-dessous conçus par
+            mes camarades de classes, travaillant sur la même problématique et tous très différents et originaux : 
+        </p> 
+    <div class="droite155">&nbsp;</div>
+    <div class="carrousel">
+        <div class="carrousel__item">
+
+            <a href="https://icon.matthieuhoareau.fr/">
+                <div  class="image155 imgalt">
+                    <img id="img1" src="assets/img/Logo_autres_projets/ICONWHITELOGO.png" class="carrousel__img">
+                    <p class="carrousel__legende">Site de Matthieu <br>Hoareau</p>
+                </div>
+            </a>
+        
+            <a href="https://equalshare.eliotgros.fr/">
+                <div class="image155 imgalt">
+                    <img id="img2"  src="assets/img/Logo_autres_projets/Equalshare.svg" class="carrousel__img">
+                    <p class="carrousel__legende">Site d'Eliot Gros</p>
+                </div>
+            </a>
+        
+            <a href="https://f-for-feminism.heinis-corp.fr/">
+                <div class="image155 imgalt">
+                    <img id="img3"   src="assets/img/Logo_autres_projets/Logoclair.png" class="carrousel__img2">
+                    <p class="carrousel__legende">Site de Quentin Heinis</p>
+                </div>
+            </a>
+        
+            <a href="https://japaminism.iversenc.fr/">
+            <div class="image155 imgalt">
+                <img id="img4"  src="assets/img/Logo_autres_projets/Logo.png" class="carrousel__img2">
+                <p class="carrousel__legende">Site d'Alicia Iversenc</p>
+            </div>
+            </a>
+
+            <a href="https://gender-education.allanhienne.fr/">
+                <div class="image155 imgalt">
+                    <img id="img5"  src="assets/img/Logo_autres_projets/logo_feminischool.svg" class="carrousel__img2">
+                    <p class="carrousel__legende">Site d'Allan Hienne</p>
+                </div>
+                </a>
+
+            <a href="https://actus-egypte--fem.hjaegle.com/index.html">
+                <div class="image155 imgalt">
+                    <img id="img6"  src="assets/img/Logo_autres_projets/Logo_egypte.png" class="carrousel__img3">
+                    <p class="carrousel__legende">Site d'Héléna Jaegle</p>
+                </div>
+            </a>
+
+            <a href="https://www.equality.maximegolfier.fr/">
+                <div class="image155 imgalt">
+                    <img id="img7"  src="assets/img/Logo_autres_projets/logo_1.webp" class="carrousel__img2">
+                    <p class="carrousel__legende">Site de Maxime Golfier</p>
+                </div>
+            </a>
+
+            <a href="https://lefeminismeuneluttesansfin.mariongillot.com/">
+                <div class="image155 imgalt">
+                    <img id="img8"  src="assets/img/Logo_autres_projets/LogoSite.svg" class="carrousel__img2">
+                    <p class="carrousel__legende">Site de Marion Gillot</p>
+                </div>
+            </a>
+
+            <a href="http://hertha.fabiogafforelli.fr/index.html">
+                <div class="image155 imgalt">
+                    <img id="img9"  src="assets/img/Logo_autres_projets/HerthaAccueil.svg" class="carrousel__img">
+                    <p class="carrousel__legende">Site de Fabio Gafforelli</p>
+                </div>
+            </a>
+
+            <a href="https://feminart.joury.fr/">
+                <div class="image155">
+                    <img id="img10"  src="assets/img/Logo_autres_projets/Feminart.png" class="carrousel__img">
+                    <p class="carrousel__legende">Site de Titouan Joury</p>
+                </div>
+            </a>
+
+            </div>
+        </div>
+    </div>
+    <script>carrousel();</script>
+
+    </section>
+
+<footer>
+    <div class="footer__start"> 
+        <h5 class="footer__title">Qui sommes nous :</h5>
+        <h5 class="footer__title">Nos réseaux :</h5>
+    </div>
+    <div class="footer__main">
+
+        <div class="footer__contact">
+            <p class="footer__text">Antonin HEUGUET MMI B1</p>
+            <a href="mailto:antonin.heuguet@gmail.com" title="Mail">
+                <p class="footer__link">antonin.heuguet@gmail.com</p>
+            </a>
+        </div>
+
+        <div class="footer__social">
+
+            <a href="https://twitter.com/home?lang=fr" title="Twitter">
+                <img alt="Icone Twitter" src="assets/img/icon/Logo_Twitter.svg"/>
+            </a>
+            
+            <a href="https://www.instagram.com/" title="Instagram">
+                    <img alt="Icone Instagram" src="assets/img/icon/Logo_Instagram.svg"/>
+            </a>
+
+            <a href="https://www.facebook.com/" title="Facebook">
+                <img alt="Icone Facebook" src="assets/img/icon/Logo_Facebook.svg"/>
+            </a>
+  
+            <a href="https://www.linkedin.com/in/antonin-heuguet-1243a6224/" title="Linkeldin">
+                <img alt="Icone Linkeldin" src="assets/img/icon/Icone_Linkeldin.svg"/>
+                </a>
+        </div>
+    </div>
+
+    <div class="footer__end">
+          <p class="footer__textend"> 
+              Projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>
+          </p>
+      </div>
+
+</footer>
+    
+        
+    </body>
+    </html>
