@@ -23,6 +23,9 @@
         </div>
 
         <div class="header__end">
+            <div class="header__retour"> <a href="javascript:history.go(-1)"><img src="assets/img/boutons_actions/arrow-left.svg" alt="Retour arrière"></a></div>
+
+            <div  class="header__burger">
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
             <span class="menu-btn__bar"></span>
@@ -60,15 +63,16 @@
                         </a></li>
                     </ul>
                     <ul class="menu__underlist list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="index.html">
+                    <li class="menu__item"><a class="menu__link" href="404.html">
                         <img src="assets/img/icon/Icone_France.png" alt="Icone france">
                     </a></li>
-                    <li class="menu__item"><a class="menu__link" href="EN index.html">
+                    <li class="menu__item"><a class="menu__link" href="404.html">
                         <img src="assets/img/icon/Icone_Anglais_2.png" alt="Icone anglais">
                     </a></li>
                     </ul>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
 
