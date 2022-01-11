@@ -23,9 +23,7 @@
         </div>
 
         <div class="header__end">
-            <div class="header__retour"> <a href="javascript:history.go(-1)"><img src="assets/img/boutons_actions/arrow-left.svg" alt="Retour arrière"></a></div>
-
-            <div  class="header__burger">
+           
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
             <span class="menu-btn__bar"></span>
@@ -72,12 +70,12 @@
                     </ul>
                 </ul>
             </nav>
-            </div>
         </div>
     </header>
 
     <main>
         <div class="erreur">
+            <div class="button__back"><a href="javascript:history.back(1)"></a></div>
             <h1 class="erreur__title">Erreur 404</h1>
 
             <h2 class="erreur__text">La page que vous cherchez semble introuvable / page not found </h2>

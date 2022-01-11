@@ -21,9 +21,7 @@
         </div>
 
         <div class="header__end">
-            <div class="header__retour"> <a href="javascript:history.go(-1)"><img src="assets/img/boutons_actions/arrow-left.svg" alt="Retour arrière"></a></div>
-    
-            <div  class="header__burger">
+        
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
             <span class="menu-btn__bar"></span>
@@ -70,10 +68,10 @@
                     </ul>
                 </ul>
             </nav>
-            </div>
         </div>
     </header>
 
+    <div class="button__back"><a href="javascript:history.back(1)"></a></div>
     <h1 id="haut">Glossary</h1>
     <div id="féminisme"></div>
     <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
