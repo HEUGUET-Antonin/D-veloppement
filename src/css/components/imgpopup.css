@@ -1,0 +1,91 @@
+
+#cache {
+    position:absolute;
+    background:rgba(0,0,0,0);
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    transition:  .5s
+}
+#cache:target {
+    background:rgba(0,0,0,.5);
+    z-index: 10;
+}
+.popup {
+    position:absolute;
+    margin-top: 100%;
+    margin-right: 50px;
+    z-index: 1000;
+    display:none;
+    top:-25px;
+    left:40px;
+}
+.popup a {
+    margin-top: 2%;
+    margin-right: 2%;
+    position:absolute;
+    background: #333;
+    color:#fff;
+    border-radius: 50%;
+    width:30px;
+    line-height:30px;
+    text-align: center;
+    font-family: var(--font-sans-serif);
+    right:0;
+    text-decoration: none;
+}
+#cache:target ~ .popup {
+    display:block;
+}
+
+/* ESSAI POP UP D'UNE DEUXIEME IMAGE 
+
+
+#cache2 {
+    margin-top: 480%;
+    position:absolute;
+    background:rgba(0,0,0,0);
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+    transition:  .5s
+}
+#cache2:target {
+    background:rgba(0,0,0,.5);
+    z-index: 10;
+}
+.popup2 {
+    position:absolute;
+    margin-top: 480%;
+    margin-right: 50px;
+    z-index: 1000;
+    display:none;
+    top:-25px;
+    left:40px;
+}
+.popup2 a {
+    margin-top: 2%;
+    margin-right: 2%;
+    position:absolute;
+    background: #333;
+    color:#fff;
+    border-radius: 50%;
+    width:30px;
+    line-height:30px;
+    text-align: center;
+    font-family: var(--font-sans-serif);
+    right:0;
+    text-decoration: none;
+}
+#cache2:target ~ .popup2 {
+    display:block;
+}
+
+*/
+
+
+
